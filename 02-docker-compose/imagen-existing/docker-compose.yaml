@@ -1,0 +1,8 @@
+version: '2.2'
+services:
+  app:
+    image: php:8.0-apache
+    volumes:
+      - ${PWD}:/var/www/html
+    ports:
+      - 8000:80
